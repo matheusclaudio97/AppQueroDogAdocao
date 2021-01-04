@@ -1,0 +1,7 @@
+{
+  "name": "AppQueroDog",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

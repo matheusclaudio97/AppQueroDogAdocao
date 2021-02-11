@@ -1,20 +1,128 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="bg-cor">
+  <!--FORMULARIO LOGIN-->
+<!--BACKGROUND COLOR-->
+<div class="bg-cor" *ngIf="login" [@animacaoLogin]>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-grid>
+<ion-row class="margin-bottom">
+<!--COLUNA IMG-->
+<ion-col size="12">
+<ion-img src="/assets/imgs/logo-querodog-roxo-grande.png"></ion-img>
+</ion-col>
+</ion-row>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<!--LINHA TITULO-->
+<ion-row class="center" size="12">
+<ion-text> <h4>Adote um doguinho!</h4> </ion-text>
+
+</ion-row>
+
+<!--LINHA DESCRIÇÃO-->
+<ion-row size="12" class="center">
+
+<ion-text class="margin-bottom"> <p class="branco-claro">Acesse sua conta para continuar...</p> </ion-text>
+
+</ion-row>
+
+
+<!--EMAIL INPUT-->
+<ion-item color="roxo">
+<ion-label name="email" position="floating"></ion-label>
+<ion-input type="email" name="email" placeholder="   Digite seu email..." required [(ngModel)]="loginForm.email"><ion-icon name="person-outline"></ion-icon></ion-input>
+</ion-item>
+
+<!--SENHA INPUT-->
+<ion-item color="roxo">
+
+<ion-label name="password" position="floating"></ion-label>
+
+<ion-input type="password" name="password" placeholder="   Digite sua senha..." required [(ngModel)]="loginForm.password"><ion-icon name="lock-closed-outline"></ion-icon></ion-input>
+</ion-item>
+
+<!--BOTÃO ENTRAR-->
+<ion-row size="12" class="row-btn-entrar" (click)="fazerLogin()" >
+<ion-button color="roxo" class="btn-entrar">ENTRAR</ion-button>
+</ion-row>
+
+<!--CRIAR CONTA-->
+
+<ion-row size="12" class="center" (click)="exibirCadastro()">
+
+<ion-text> <p class="branco-claro">Criar uma conta</p> </ion-text>
+
+</ion-row>
+
+</ion-grid>
+
+<!--RODAPÉ-->
+
+<ion-footer class="footer">by Matheus Claudio Silva Candido</ion-footer>
+
+
+</div>
+
+  <!--FORMULARIO CADASTRO-->
+
+<!--BACKGROUND COLOR-->
+<div class="bg-cor" *ngIf="cadastro" [@animacaoCadastro]>
+
+<ion-grid>
+<ion-row class="margin-bottom">
+<!--COLUNA IMG-->
+<ion-col size="12">
+<ion-img src="/assets/imgs/logo-querodog-roxo-grande.png"></ion-img>
+</ion-col>
+</ion-row>
+
+<!--LINHA TITULO-->
+<ion-row class="center" size="12">
+<ion-text> <h4>Adote um doguinho!</h4> </ion-text>
+
+</ion-row>
+
+<!--LINHA DESCRIÇÃO-->
+<ion-row size="12" class="center">
+
+<ion-text class="margin-bottom"> <p class="branco-claro">Crie uma conta para continuar...</p> </ion-text>
+
+</ion-row>
+
+<!--EMAIL INPUT-->
+<ion-item color="roxo">
+<ion-label name="name" position="floating"></ion-label>
+<ion-input type="text" name="name" placeholder="   Digite seu nome..." required [(ngModel)]="cadastroForm.name"><ion-icon name="person-outline"></ion-icon></ion-input>
+</ion-item>
+
+<!--EMAIL INPUT-->
+<ion-item color="roxo">
+<ion-label name="email" position="floating"></ion-label>
+<ion-input type="email" name="email" placeholder="   Digite seu email..." required [(ngModel)]="cadastroForm.email"><ion-icon name="person-outline"></ion-icon></ion-input>
+</ion-item>
+
+<!--SENHA INPUT-->
+<ion-item color="roxo">
+
+<ion-label name="password" position="floating"></ion-label>
+
+<ion-input type="password" name="password" placeholder="   Digite sua senha..." required [(ngModel)]="cadastroForm.password"><ion-icon name="lock-closed-outline"></ion-icon></ion-input>
+</ion-item>
+
+<!--BOTÃO ENTRAR-->
+<ion-row size="12" class="row-btn-entrar" (click)="fazerCadastro()">
+<ion-button color="roxo" class="btn-entrar">CRIAR CONTA</ion-button>
+</ion-row>
+
+<!--CRIAR CONTA-->
+
+<ion-row size="12" class="center" (click)="exibirLogin()">
+
+<ion-text> <p class="branco-claro">Já tenho uma conta</p> </ion-text>
+
+</ion-row>
+
+</ion-grid>
+
+<!--RODAPÉ-->
+</div> 
+
 </ion-content>

@@ -1,0 +1,40 @@
+.grid{
+    background-image: url(../../assets/imgs/background-roxo.jpg);
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.footer-style{
+
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+   
+    
+}
+
+.bg{
+    background-image: url(../../assets/imgs/background-roxo.jpg);
+
+}
+
+ion-tab-button{  
+    background-image: url(../../assets/imgs/background-roxo.jpg);
+
+}
+
+ion-icon, ion-label {
+    color: white;
+}
+ion-tab-bar{
+    border-top: white 0.5px solid;
+}
+
+.header-ajust{
+    color: white;
+    margin-top: 10px;
+    border-bottom: white 1px solid;
+    padding: 0;
+}

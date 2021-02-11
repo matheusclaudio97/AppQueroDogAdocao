@@ -1,0 +1,42 @@
+<ion-content>
+  <ion-grid class="grid-modal">
+    <ion-row>
+      <ion-col size="12">
+        <ion-title>PUBLICAR</ion-title>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+
+      <ion-col class="alinhamento-col" size="12">
+
+        <ion-item color="roxo">
+          <ion-label name="titulo" position="floating">Titulo</ion-label>
+          <ion-input type="text" name="titulo" maxlength="20" required></ion-input>
+        </ion-item>
+
+        <ion-item color="roxo">
+          <ion-label name="descricao" position="floating">Descrição</ion-label>
+          <ion-textarea class="input-desc" name="descricao"></ion-textarea>
+        </ion-item>
+
+        <ion-item color="roxo">
+        
+          <input class="input-file" type="file" name="file">
+        </ion-item>
+
+    
+      
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12" class="col-envio">
+        <ion-item color="roxo">
+          <ion-button>CANCELAR</ion-button>
+          <ion-button>ENVIAR</ion-button>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

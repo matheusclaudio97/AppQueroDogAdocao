@@ -1,27 +1,37 @@
-#container {
+.branco-claro{
+  color: rgba(255, 255, 255, 0.63);
+  font-size: 10pt;
+}
+
+ion-button{
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-radius: 40px;
+  
+}
+ion-input{
+ font-family:'ABeeZee', sans-serif;
+
+}
+ion-icon{
+  padding: 5px;
+}
+.btn-entrar{
+  width: 60%;
+  font-size: 12pt;
+  color: white;
+
+}
+.row-btn-entrar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  height: 60px;
+}
+.footer{
+  font-size: 7px;
+  color: rgba(255, 255, 255, 0.63);
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+  padding: 20px;
 }
